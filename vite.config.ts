@@ -17,6 +17,11 @@ function figmaAssetResolver() {
 }
 
 export default defineConfig({
+  // For GitHub Pages deployment:
+  // - If deploying to https://<USERNAME>.github.io/, use base: '/'
+  // - If deploying to https://<USERNAME>.github.io/<REPO>/, use base: '/<REPO>/'
+  base: process.env.GITHUB_ACTIONS ? '/' : '/',
+
   plugins: [
     figmaAssetResolver(),
     // The React and Tailwind plugins are both required for Make, even if
@@ -33,4 +38,10 @@ export default defineConfig({
 
   // File types to support raw imports. Never add .css, .tsx, or .ts files to this.
   assetsInclude: ['**/*.svg', '**/*.csv'],
+
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    emptyOutDir: true,
+  },
 })
