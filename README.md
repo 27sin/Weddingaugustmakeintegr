@@ -1,11 +1,80 @@
+# 💍 Свадебное приглашение
 
-  # Сайт приглашение на свадьбу
+Элегантный сайт-приглашение на свадьбу в лотерейной тематике, созданный с использованием React и Tailwind CSS.
 
-  This is a code bundle for Сайт приглашение на свадьбу. The original project is available at https://www.figma.com/design/0nmzZwOdURrQv9Nzyk8MLo/%D0%A1%D0%B0%D0%B9%D1%82-%D0%BF%D1%80%D0%B8%D0%B3%D0%BB%D0%B0%D1%88%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BD%D0%B0-%D1%81%D0%B2%D0%B0%D0%B4%D1%8C%D0%B1%D1%83.
+## 🎨 Особенности
 
-  ## Running the code
+- 🎫 Уникальный дизайн в виде лотерейного билета
+- 📱 Полностью адаптивный для мобильных и десктопных устройств
+- 🎨 Элегантная цветовая палитра (бежевый, мятный, оливковый)
+- 📍 Интеграция с картами для локации
+- 📋 Ссылка на анкету для подтверждения присутствия
+- ⏱️ Детальное расписание дня
+- 👗 Секция с дресс-кодом и образами
 
-  Run `npm i` to install the dependencies.
+## 🚀 Деплой на GitHub Pages
 
-  Run `npm run dev` to start the development server.
-  
+### Быстрый старт
+
+1. **Создайте репозиторий `Weddingaugustmakeintegr` на GitHub**
+
+2. **Загрузите проект:**
+   ```bash
+   git init
+   git add .
+   git commit -m "Свадебное приглашение"
+   git branch -M main
+   git remote add origin https://github.com/ВАШ-USERNAME/Weddingaugustmakeintegr.git
+   git push -u origin main
+   ```
+
+3. **Включите GitHub Pages:**
+   - Settings → Pages → Source → выберите **"GitHub Actions"**
+
+4. **Готово!** Сайт будет доступен по адресу:
+   ```
+   https://ВАШ-USERNAME.github.io/Weddingaugustmakeintegr/
+   ```
+
+Подробная инструкция: [DEPLOYMENT.md](./DEPLOYMENT.md)
+
+## 💻 Локальная разработка
+
+```bash
+# Установка зависимостей
+pnpm install
+
+# Запуск dev сервера
+pnpm dev
+
+# Сборка для продакшена
+pnpm build
+```
+
+## 📝 Персонализация
+
+Откройте `src/app/App.tsx` и измените:
+
+- **Имена**: `Иван & Мария` → ваши имена
+- **Дата**: `30 Мая 2026` → ваша дата
+- **Время**: `16:00` → ваше время
+- **Локация**: адрес и ссылку на карты
+- **Программа дня**: расписание мероприятия
+- **Ссылка на анкету**: замените `https://forms.yandex.ru` на вашу форму
+- **Контакты**: телефон и другую контактную информацию
+
+## 🎯 Технологии
+
+- React 18
+- Vite 6
+- Tailwind CSS 4
+- Lucide Icons
+- GitHub Pages для хостинга
+
+## 📄 Лицензия
+
+Создано для личного использования.
+
+---
+
+Создано с ❤️ для незабываемого дня

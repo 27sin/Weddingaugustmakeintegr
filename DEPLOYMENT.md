@@ -3,7 +3,7 @@
 ## Быстрый старт
 
 ### 1. Создайте репозиторий на GitHub
-Создайте новый публичный репозиторий на GitHub (например, `wedding-invitation`)
+Создайте новый публичный репозиторий на GitHub с именем `Weddingaugustmakeintegr`
 
 ### 2. Загрузите проект
 ```bash
@@ -11,7 +11,7 @@ git init
 git add .
 git commit -m "Свадебное приглашение"
 git branch -M main
-git remote add origin https://github.com/ВАШ-USERNAME/wedding-invitation.git
+git remote add origin https://github.com/ВАШ-USERNAME/Weddingaugustmakeintegr.git
 git push -u origin main
 ```
 
@@ -20,28 +20,16 @@ git push -u origin main
 2. Перейдите в **Settings** → **Pages**
 3. В разделе **Source** выберите **GitHub Actions**
 
-### 4. Настройте base path (важно!)
+### 4. Base path уже настроен! ✅
 
-Откройте файл `vite.config.ts` и измените строку:
-
-**Если ваш сайт будет на `https://username.github.io/wedding-invitation/`:**
+В файле `vite.config.ts` уже указан правильный путь для репозитория `Weddingaugustmakeintegr`:
 ```typescript
-base: process.env.GITHUB_ACTIONS ? '/wedding-invitation/' : '/',
+base: process.env.GITHUB_ACTIONS ? '/Weddingaugustmakeintegr/' : '/',
 ```
 
-**Если у вас кастомный домен или сайт на `https://username.github.io/`:**
-```typescript
-base: process.env.GITHUB_ACTIONS ? '/' : '/',
-```
+Ваш сайт будет доступен по адресу: `https://ВАШ-USERNAME.github.io/Weddingaugustmakeintegr/`
 
-### 5. Запушьте изменения (если меняли base)
-```bash
-git add vite.config.ts
-git commit -m "Настройка base path"
-git push
-```
-
-### 6. Готово! 🎉
+### 5. Готово! 🎉
 - Перейдите во вкладку **Actions** и дождитесь завершения деплоя
 - Ваш сайт будет доступен по адресу, указанному в **Settings → Pages**
 

@@ -20,7 +20,7 @@ export default defineConfig({
   // For GitHub Pages deployment:
   // - If deploying to https://<USERNAME>.github.io/, use base: '/'
   // - If deploying to https://<USERNAME>.github.io/<REPO>/, use base: '/<REPO>/'
-  base: process.env.GITHUB_ACTIONS ? '/' : '/',
+  base: process.env.GITHUB_ACTIONS ? '/Weddingaugustmakeintegr/' : '/',
 
   plugins: [
     figmaAssetResolver(),
